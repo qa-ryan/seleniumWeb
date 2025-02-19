@@ -29,5 +29,5 @@ def content_validation(self):
     print(almost_empty)
 
     # This line is to check result text
-    result = self.driver.find_element(By.TAG_NAME, "p").text
+    result = self.driver.find_element(By.CSS_SELECTOR, "body > p:nth-child(5)").text
     print(result)
